@@ -6,7 +6,7 @@ $("#add-text").click(function(){
   // add input to list
   var entry = $("#text-input");
   var del_button = "<button class=\"cross-off\">✓</button>"
-  $("#to-do").append("<div class=\"list-item\">" + del_button + " " + entry.val() + "</div>");
+  $("#to-do").append("<div class=\"list-item\">" + del_button + " " + entry.val() + "</div>"); // beware of user HTML injection
   $(".cross-off").click(did_the_thing);
   entry.val("");
 });
